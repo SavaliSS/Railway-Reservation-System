@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>List of Trains</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Train Selection Form</h2>
+        <form action="trains.php" method="post">
+
+            <div class="form-group">
+                <label for="train_id">Train ID:</label>
+                <select id="train_id" name="train_id" required>
+                    <option value="Select">Select Train</option>
+                    <option value="2221">2221</option>
+                    <option value="2222">2222</option>
+                    <option value="2223">2223</option>
+                    <option value="2224">2224</option>
+                    <option value="2225">2225</option>
+                    <option value="2226">2226</option>
+                    <!-- Add more train name options here -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="train_name">Train Name:</label>
+                <select id="train_name" name="train_name" required>
+                    <option value="Select">Select Train</option>
+                    <option value="Shatapdi_Express">Shatapdi Express</option>
+                    <option value="Deccan_Odyssey">Deccan Odyssey</option>
+                    <option value="Duronto">Duronto</option>
+                    <option value="Humsafar_Express">Humsafar Express</option>
+                    <option value="Maharaja_Express">Maharaja Express</option>
+                    <option value="Golden_Charriot">Golden Charriot</option>
+                    <!-- Add more train name options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="train_number">Train Number:</label>
+                <select id="train_number" name="train_number" required>
+                    <option value="Select">Select Train Number</option>
+                    <option value="STP22221">STP22221</option>
+                    <option value="DCO2222">DCO2222</option>
+                    <option value="RJD2223">RJD2223</option>
+                    <option value="DRT2224">DRT2224</option>
+                    <option value="HSF2225">HSF2225</option>
+                    <option value="MHJ2226">MHJ2226</option>
+                    <option value="GLD2227">GLD2227</option>
+                    <!-- Add more train number options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="train_type">Train Type:</label>
+                <select id="train_type" name="train_type" required>
+                    <option value="Select">Select Train Type</option>
+                    <option value="Express">Express</option>
+                    <option value="Local">Local</option>
+                    <option value="Superfast">Superfast</option>
+                    <option value="Passenger">Passenger</option>
+                    <option value="Premium">Premium</option>
+                    
+        
+                    <!-- Add more train type options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <h2>List of Trains</h2>
+    
+</body>
+</html>
